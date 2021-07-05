@@ -46,7 +46,7 @@ const NavigationItems = [
         type: 'item',
         classes: 'nav-item',
         icon: 'feather icon-layout',
-        url: '/dashboard/statistic'
+        url: '/membership/mshp-membership'
       },
       {
         id: 'widget',
