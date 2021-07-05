@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mshp-country.component.scss']
 })
 export class MshpCountryComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {

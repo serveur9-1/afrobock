@@ -59,7 +59,7 @@ const NavigationItems = [
             title: 'Biens',
             type: 'item',
             classes: 'nav-item',
-            url: '/widget/statistic'
+            url: '/hospital/hosp-doctor'
           },
           {
             id: 'data',
@@ -92,7 +92,7 @@ const NavigationItems = [
         title: 'Paiements',
         type: 'item',
         classes: 'nav-item',
-        url: '/dashboard/statistic'
+        url: '/membership/mshp-country'
 
       },
       {
@@ -100,7 +100,7 @@ const NavigationItems = [
         title: 'Stripes',
         type: 'item',
         classes: 'nav-item',
-        url: '/dashboard/statistic'
+        url: '/crypto/cp-wallet'
 
       }
     ]
@@ -111,7 +111,7 @@ const NavigationItems = [
     type: 'item',
     icon: 'feather icon-layers',
     classes: 'nav-item',
-    url: '/dashboard/statistic'
+    url: '/hospital/hosp-pharmacist'
   },
   {
     id: 'forms',

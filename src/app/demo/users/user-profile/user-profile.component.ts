@@ -195,7 +195,7 @@ export class UserProfileComponent implements OnInit {
         title: 'Action',
         data: 'id',
         render: (data: any, type: any, full: any) => {
-          return '<button class="btn btn-outline-primary btn-sm">View</button>';
+          return '<button class="btn btn-outline-primary btn-sm">Voir</button>';
         }
       }],
       responsive: true

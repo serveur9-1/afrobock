@@ -4,84 +4,51 @@
       <div class="row align-items-center m-l-0">
         <div class="col-sm-6"></div>
         <div class="col-sm-6 text-right">
-          <button class="btn btn-success btn-sm btn-round has-ripple" (click)="modalDoctor.show()"><i class="feather icon-plus"></i> Add Doctor</button>
+          <button class="btn btn-success btn-sm btn-round has-ripple" (click)="modalDoctor.show()"><i class="feather icon-plus"></i> Ajouter un bien</button>
         </div>
         <app-ui-modal #modalDoctor>
           <div class="app-modal-header">
-            <h5 class="modal-title">Add Doctor</h5>
+            <h5 class="modal-title">Ajouter un bien</h5>
             <button type="button" class="close basic-close" data-dismiss="modal" aria-label="Close" (click)="modalDoctor.hide()"><span aria-hidden="true">&times;</span></button>
           </div>
           <div class="app-modal-body">
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                  <input type="text" class="form-control" id="Name" placeholder="Nom du bien">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group fill">
-                  <input type="email" class="form-control" id="Email" placeholder="Email">
+                  <input type="text" class="form-control" id="prix" placeholder="Prix">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group fill">
-                  <input type="password" class="form-control" id="Password" placeholder="Password">
+                  <input type="text" class="form-control" id="Phone" placeholder="Contact">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="Phone" placeholder="Phone">
+                  <input type="text" class="form-control" id="location" placeholder="Localisation">
                 </div>
               </div>
               <div class="col-sm-12">
                 <div class="form-group">
-                  <textarea class="form-control" placeholder="Address" id="Address" rows="3"></textarea>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <select class="form-control" id="Department">
-                    <option class="text-muted" value="">Choose Department</option>
-                    <option value="1">Anesthetics</option>
-                    <option value="2">Cardiology</option>
-                    <option value="3">Gastroenterology</option>
-                  </select>
+                  <textarea class="form-control" placeholder="Description" id="Description" rows="3"></textarea>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group fill">
-                  <label class="floating-label" for="Icon">Profie Image</label>
+                  <label class="floating-label" for="Icon">Image du bien</label>
                   <input type="file" class="form-control" id="Icon" placeholder="sdf">
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <h5 class="mt-3">Social Links</h5>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="Facebook" placeholder="Facebook Profile Link">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="Twitter" placeholder="Twitter Profile Link">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="Google" placeholder="Google Plus Link">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="Linkedin" placeholder="Linkedin Profile Link">
                 </div>
               </div>
             </div>
           </div>
           <div class="app-modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="modalDoctor.hide()">Clear</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="modalDoctor.hide()">Annuler</button>
+            <button type="button" class="btn btn-primary">Enregistrer</button>
           </div>
         </app-ui-modal>
       </div>
@@ -90,10 +57,10 @@
           <thead>
           <tr>
             <th>Image</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Department</th>
+            <th>Nom du bien</th>
+            <th>Prix</th>
+            <th>Contact</th>
+            <th>Détail</th>
             <th>Options</th>
           </tr>
           </thead>
@@ -103,79 +70,93 @@
               <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
             </td>
             <td>Micheal Pewd</td>
-            <td>doctor@example.com</td>
+            <td>25.000</td>
             <td>+984-46-9388638</td>
-            <td>Cardiology</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
             <td>
-              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Edit </a>
-              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Delete </a>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
             </td>
           </tr>
           <tr>
             <td class="text-center">
-              <img src="assets/images/user/avatar-3.jpg" class="img-fluid img-radius wid-40" alt="">
-            </td>
-            <td>Erich Mcbride</td>
-            <td>xidim@gmail.com</td>
-            <td>+612-92-1385682</td>
-            <td>Anesthetics</td>
-            <td>
-              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Edit </a>
-              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Delete </a>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-center">
-              <img src="assets/images/user/avatar-5.jpg" class="img-fluid img-radius wid-40" alt="">
+              <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
             </td>
             <td>Micheal Pewd</td>
-            <td>doctor@example.com</td>
+            <td>25.000</td>
             <td>+984-46-9388638</td>
-            <td>Cardiology</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
             <td>
-              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Edit </a>
-              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Delete </a>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
             </td>
           </tr>
           <tr>
             <td class="text-center">
-              <img src="assets/images/user/avatar-4.jpg" class="img-fluid img-radius wid-40" alt="">
-            </td>
-            <td>Erich Mcbride</td>
-            <td>xidim@gmail.com</td>
-            <td>+612-92-1385682</td>
-            <td>Anesthetics</td>
-            <td>
-              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Edit </a>
-              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Delete </a>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-center">
-              <img src="assets/images/user/avatar-1.jpg" class="img-fluid img-radius wid-40" alt="">
+              <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
             </td>
             <td>Micheal Pewd</td>
-            <td>doctor@example.com</td>
+            <td>25.000</td>
             <td>+984-46-9388638</td>
-            <td>Cardiology</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
             <td>
-              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Edit </a>
-              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Delete </a>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
             </td>
           </tr>
           <tr>
             <td class="text-center">
-              <img src="assets/images/user/avatar-3.jpg" class="img-fluid img-radius wid-40" alt="">
+              <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
             </td>
-            <td>Erich Mcbride</td>
-            <td>xidim@gmail.com</td>
-            <td>+612-92-1385682</td>
-            <td>Anesthetics</td>
+            <td>Micheal Pewd</td>
+            <td>25.000</td>
+            <td>+984-46-9388638</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
             <td>
-              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Edit </a>
-              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Delete </a>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
             </td>
           </tr>
+          <tr>
+            <td class="text-center">
+              <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
+            </td>
+            <td>Micheal Pewd</td>
+            <td>25.000</td>
+            <td>+984-46-9388638</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
+            <td>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
+            </td>
+            <td>Micheal Pewd</td>
+            <td>25.000</td>
+            <td>+984-46-9388638</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
+            <td>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <img src="assets/images/user/avatar-2.jpg" class="img-fluid img-radius wid-40" alt="">
+            </td>
+            <td>Micheal Pewd</td>
+            <td>25.000</td>
+            <td>+984-46-9388638</td>
+            <td>Un meuble suréquipé qui offre de multiple service</td>
+            <td>
+              <a href="javascript:" class="btn btn-info btn-sm"><i class="feather icon-edit"></i>&nbsp;Modifier </a>
+              <a href="javascript:" class="btn btn-danger btn-sm"><i class="feather icon-trash-2"></i>&nbsp;Supprimé </a>
+            </td>
+          </tr>
+
           </tbody>
         </table>
       </div>
