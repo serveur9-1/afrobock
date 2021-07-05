@@ -1,0 +1,182 @@
+<div class="row btn-page">
+  <div class="col-sm-12">
+    <app-card cardTitle="Etat des souscriptions" [options]="false">
+      <div class="row">
+        <div class="col-md-3 col-xs-6 border-right">
+          <h3>2</h3>
+          <span class="">En attente</span>
+        </div>
+        <div class="col-md-3 col-xs-6 border-right">
+          <h3>12</h3>
+          <span class="text-primary">En cours</span>
+        </div>
+        <div class="col-md-3 col-xs-6 border-right">
+          <h3>1</h3>
+          <span class="">Annulée</span>
+        </div>
+        <div class="col-md-3  col-xs-6">
+          <h3>0</h3>
+          <span class="text-success">Terminée</span>
+        </div>
+      </div>
+    </app-card>
+  </div>
+  <div class="col-sm-12">
+    <app-card [hidHeader]="true">
+      <ngb-tabset>
+        <ngb-tab title="Les souscriptions">
+          <ng-template ngbTabContent>
+            <div class="table-responsive p-t-20">
+              <table datatable id="project-1" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Clients</th>
+                  <th>Date debut</th>
+                  <th>Deadline</th>
+                  <th>Biens</th>
+                  <th>Status</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="has-row-options odd" role="row">
+                  <td>1</td>
+                  <td>Build Website
+                    <small class="d-block">
+                      <a href="javascript:">Détail</a> |
+                      <a href="javascript:" class="text-danger">Supprimé </a>
+                    </small>
+                  </td>
+                  <td>2019-07-29</td>
+                  <td>2019-09-29</td>
+                  <td>
+                    <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+                  </td>
+                  <td><span class="badge badge-success inline-block">En cours</span></td>
+                </tr>
+                <tr class="has-row-options odd" role="row">
+                  <td>1</td>
+                  <td>Build Website
+                    <small class="d-block">
+                      <a href="javascript:">Détail</a> |
+                      <a href="javascript:" class="text-danger">Supprimé </a>
+                    </small>
+                  </td>
+                  <td>2019-07-29</td>
+                  <td>2019-09-29</td>
+                  <td>
+                    <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+                  </td>
+                  <td><span class="badge badge-success inline-block">En cours</span></td>
+                </tr>
+                <tr class="has-row-options odd" role="row">
+                  <td>1</td>
+                  <td>Build Website
+                    <small class="d-block">
+                      <a href="javascript:">Détail</a> |
+                      <a href="javascript:" class="text-danger">Supprimé </a>
+                    </small>
+                  </td>
+                  <td>2019-07-29</td>
+                  <td>2019-09-29</td>
+                  <td>
+                    <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+                  </td>
+                  <td><span class="badge badge-success inline-block">En cours</span></td>
+                </tr>
+                <tr class="has-row-options odd" role="row">
+                  <td>1</td>
+                  <td>Build Website
+                    <small class="d-block">
+                      <a href="javascript:">Détail</a> |
+                      <a href="javascript:" class="text-danger">Supprimé </a>
+                    </small>
+                  </td>
+                  <td>2019-07-29</td>
+                  <td>2019-09-29</td>
+                  <td>
+                    <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+                  </td>
+                  <td><span class="badge badge-success inline-block">En cours</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </ng-template>
+        </ngb-tab>
+        <ngb-tab title="Nouvelle souscription">
+          <ng-template ngbTabContent>
+            <div class="row p-t-20">
+              <div class="col-sm-12 col-md-6">
+                <app-card cardTitle="Large Nav Filled With Symbol Icon" [options]="false">
+                  <aw-wizard #wizard class="arc-wizard" navBarLayout="large-filled-symbols">
+                    <aw-wizard-step stepTitle="Profile" [navigationSymbol]="{ symbol: '&#xe8e9;', fontFamily: 'feather' }" [style.font-weight]="900">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h5>Profile Title</h5>
+                          <hr>
+                          <h6>Sub title 1</h6>
+                          <p><strong>@Title content 1!.. </strong> Lorem Ipsum is simply dummy text of the printing <strong>@Content content 1 </strong> and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text.</p>
+                          <h6 class="mt-3">Sub title 2</h6>
+                          <p><strong>@Title content 2!.. </strong> Lorem Ipsum is simply dummy text and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        </div>
+                        <div class="col-sm-12 centered-content">
+                          <div class="btn-group mt-10">
+                            <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+                          </div>
+                        </div>
+                      </div>
+                    </aw-wizard-step>
+                    <aw-wizard-step stepTitle="Address" [navigationSymbol]="{ symbol: '&#xe88c;', fontFamily: 'feather' }" [style.font-weight]="900">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h5>Address Title</h5>
+                          <hr>
+                          <h6>Sub title 1</h6>
+                          <p><strong>@Title content 1!.. </strong> Lorem Ipsum is simply dummy text of the printing <strong>@Content content 1 </strong> and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text.</p>
+                          <h6 class="mt-3">Sub title 2</h6>
+                          <p><strong>@Title content 2!.. </strong> Lorem Ipsum is simply dummy text and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        </div>
+                        <div class="col-sm-12 centered-content">
+                          <div class="btn-group mt-10">
+                            <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+                            <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+                          </div>
+                        </div>
+                      </div>
+                    </aw-wizard-step>
+                    <aw-wizard-step stepTitle="Completed" [navigationSymbol]="{ symbol: '&#xe840;', fontFamily: 'feather' }">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h5>Finished Title</h5>
+                          <hr>
+                          <h6>Sub title 1</h6>
+                          <p><strong>@Title content 1!.. </strong> Lorem Ipsum is simply dummy text of the printing <strong>@Content content 1 </strong> and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text.</p>
+                          <h6 class="mt-3">Sub title 2</h6>
+                          <p><strong>@Title content 2!.. </strong> Lorem Ipsum is simply dummy text and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        </div>
+                        <div class="col-sm-12 centered-content">
+                          <div class="btn-group mt-10">
+                            <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+                            <button type="button" class="btn btn-success btn-sm" awResetWizard>Finished</button>
+                          </div>
+                        </div>
+                      </div>
+                    </aw-wizard-step>
+                  </aw-wizard>
+                </app-card>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary"> Save </button>
+                <button class="btn btn-danger"> Clear </button>
+              </div>
+            </div>
+          </ng-template>
+        </ngb-tab>
+      </ngb-tabset>
+    </app-card>
+  </div>
+</div>

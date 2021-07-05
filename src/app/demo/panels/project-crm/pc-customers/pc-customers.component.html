@@ -1,0 +1,109 @@
+<div class="row btn-page">
+  <div class="col-sm-12">
+    <app-card cardTitle="Customers Summary" [options]="false">
+      <div class="row">
+        <div class="col-md-3 col-xs-6 border-right">
+          <h3>2</h3>
+          <span class="">En attente</span>
+        </div>
+        <div class="col-md-3 col-xs-6 border-right">
+          <h3>12</h3>
+          <span class="text-primary">En cours</span>
+        </div>
+        <div class="col-md-3 col-xs-6 border-right">
+          <h3>1</h3>
+          <span class="">Annulée</span>
+        </div>
+        <div class="col-md-3  col-xs-6">
+          <h3>0</h3>
+          <span class="text-success">Terminée</span>
+        </div>
+      </div>
+    </app-card>
+  </div>
+  <div class="col-sm-12 btn-page">
+    <app-card [hidHeader]="true" cardClass="card-datatable">
+      <div class="row align-items-center m-l-0">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6 text-right">
+          <button class="btn btn-success btn-sm btn-round has-ripple" [routerLink]="['/users/profile']" ><i class="feather icon-plus"></i> Nouvelle souscription</button>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table datatable id="report-table" class="table table-striped table-hover mb-0">
+          <thead>
+          <tr>
+            <th>#</th>
+            <th>Clients</th>
+            <th>Date debut</th>
+            <th>Deadline</th>
+            <th>Biens</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr class="has-row-options odd" role="row">
+              <td>1</td>
+              <td>Build Website
+                <small class="d-block">
+                  <a [routerLink]="['/users/profile']">Détail</a> |
+                  <a href="javascript:" class="text-danger">Supprimé </a>
+                </small>
+              </td>
+              <td>2019-07-29</td>
+              <td>2019-09-29</td>
+              <td>
+                <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+              </td>
+              <td><span class="badge badge-success inline-block">En cours</span></td>
+            </tr>
+            <tr class="has-row-options odd" role="row">
+              <td>2</td>
+              <td>Build Website
+                <small class="d-block">
+                  <a [routerLink]="['/users/profile']">Détail</a> |
+                  <a href="javascript:" class="text-danger">Supprimé </a>
+                </small>
+              </td>
+              <td>2019-07-29</td>
+              <td>2019-09-29</td>
+              <td>
+                <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+              </td>
+              <td><span class="badge badge-success inline-block">En cours</span></td>
+            </tr>
+            <tr class="has-row-options odd" role="row">
+              <td>3</td>
+              <td>Build Website
+                <small class="d-block">
+                  <a [routerLink]="['/users/profile']">Détail</a> |
+                  <a href="javascript:" class="text-danger">Supprimé </a>
+                </small>
+              </td>
+              <td>2019-07-29</td>
+              <td>2019-09-29</td>
+              <td>
+                <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+              </td>
+              <td><span class="badge badge-success inline-block">En cours</span></td>
+            </tr>
+            <tr class="has-row-options odd" role="row">
+              <td>4</td>
+              <td>Build Website
+                <small class="d-block">
+                  <a [routerLink]="['/users/profile']">Détail</a> |
+                  <a href="javascript:" class="text-danger">Supprimé </a>
+                </small>
+              </td>
+              <td>2019-07-29</td>
+              <td>2019-09-29</td>
+              <td>
+                <img class="img-radius wid-30 mr-1" src="assets/images/user/avatar-1.jpg" data-toggle="tooltip" data-title="Guido Nolan" alt="Generic placeholder image">
+              </td>
+              <td><span class="badge badge-success inline-block">En cours</span></td>
+            </tr> </tbody>
+        </table>
+      </div>
+    </app-card>
+  </div>
+</div>
