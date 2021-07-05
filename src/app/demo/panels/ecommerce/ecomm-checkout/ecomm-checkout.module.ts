@@ -5,6 +5,8 @@ import { EcommCheckoutRoutingModule } from './ecomm-checkout-routing.module';
 import { EcommCheckoutComponent } from './ecomm-checkout.component';
 import {SharedModule} from '../../../../theme/shared/shared.module';
 import {ArchwizardModule} from 'angular-archwizard';
+import {TagInputModule} from 'ngx-chips';
+import {NgbDropdownModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import {ArchwizardModule} from 'angular-archwizard';
     CommonModule,
     EcommCheckoutRoutingModule,
     SharedModule,
-    ArchwizardModule
+    ArchwizardModule,
+    TagInputModule,
+    NgbDropdownModule
   ]
 })
 export class EcommCheckoutModule { }
