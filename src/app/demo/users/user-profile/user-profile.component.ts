@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {IAlbum, IEvent, Lightbox, LIGHTBOX_EVENT, LightboxConfig, LightboxEvent} from 'ngx-lightbox';
 import {Subscription} from 'rxjs';
 import {DomSanitizer} from '@angular/platform-browser';
+import {FormControl, FormGroup} from '@angular/forms';
+
+import { FileUploadValidators } from '@iplab/ngx-file-upload';
+
 
 @Component({
   selector: 'app-user-profile',
@@ -9,6 +13,13 @@ import {DomSanitizer} from '@angular/platform-browser';
   styleUrls: ['./user-profile.component.scss']
 })
 export class UserProfileComponent implements OnInit {
+
+  private filesControl = new FormControl(null, FileUploadValidators.filesLimit(2));
+
+  public demoForm = new FormGroup({
+    files: this.filesControl
+  });
+
   dtExportButtonOptions: any = {};
   dtColumnsReorderOptions: any = {};
   dtResponsiveOptions: any = {};
@@ -189,6 +200,10 @@ export class UserProfileComponent implements OnInit {
       }],
       responsive: true
     };
+  }
+
+  public toggleStatus() {
+    this.filesControl.disabled ? this.filesControl.enable() : this.filesControl.disable();
   }
 
   public getSantizeUrl(url : string) {
