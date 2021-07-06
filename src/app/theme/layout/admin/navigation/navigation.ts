@@ -66,7 +66,7 @@ const NavigationItems = [
             title: 'Configuration',
             type: 'item',
             classes: 'nav-item',
-            url: '/widget/data'
+            url: '/hospital/hosp-department'
           }
         ]
       },
@@ -119,7 +119,7 @@ const NavigationItems = [
     type: 'item',
     icon: 'feather icon-layout',
     classes: 'nav-item',
-    url: '/dashboard/statistic'
+    url: '/forms/validation'
   }
 ];
 
