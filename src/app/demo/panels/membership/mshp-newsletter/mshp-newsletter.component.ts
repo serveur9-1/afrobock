@@ -21,7 +21,7 @@ export class MshpNewsletterComponent implements OnInit {
       '<tr><td height="30"> </td></tr>' +
       '<tr><td align="center">[LOGO]</td></tr>' +
       '<tr><td height="20"> </td></tr>' +
-      '<tr><td><p style="text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; font-size: 26px; color: #222222;">Welcome to [COMPANY]</p></td></tr>' +
+      '<tr><td><p style="text-align: center; margin: 0; font-family: Helvetica, Arial, sans-serif; font-size: 26px; color: #222222;">[COMPANY]</p></td></tr>' +
       '<tr><td align="center"><hr/></td></tr>' +
       '<tr><td height="30"> </td></tr>' +
       '<tr>' +
