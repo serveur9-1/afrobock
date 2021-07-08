@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './theme/shared/shared.module';
@@ -50,7 +51,8 @@ import { NgbButtonsModule, NgbDropdownModule, NgbTabsetModule, NgbTooltipModule 
     NgbDropdownModule,
     NgbTooltipModule,
     NgbButtonsModule,
-    NgbTabsetModule
+    NgbTabsetModule,
+    ToastrModule.forRoot()
   ],
   providers: [NavigationItem],
   bootstrap: [AppComponent]
